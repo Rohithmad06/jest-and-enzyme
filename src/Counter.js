@@ -8,7 +8,9 @@ const Counter = (props) => {
   return (
     <div>
       <h1>The current count is {count}</h1>
-      <button onClick={buttonClickedHandler}>Click me</button>
+      <button onClick={buttonClickedHandler} data-test="increment-button">
+        Click me
+      </button>
     </div>
   );
 };
